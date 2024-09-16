@@ -1,0 +1,58 @@
+:root {
+	--main-color: #3d5b59;
+	--second-color: #b5e5cf;
+	--third-color: #b99095;
+}
+
+body {
+	background: var(--main-color);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr 2fr 2fr 0.25fr;
+	grid-template-areas:
+		"title nav"
+		"pic newArrival"
+		"events events"
+		"footer footer";
+}
+
+#title {
+	grid-area: title;
+	font-family: "Aboreto", system-ui;
+}
+
+#nav {
+	grid-area: nav;
+}
+
+#libraryPic {
+	grid-area: pic;
+	height: 20rem;
+	width: 20rem;
+}
+
+#newArrivals {
+	grid-area: newArrival;
+}
+
+#events {
+	grid-area: events;
+	width: 100%;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.aboreto-regular {
+	font-family: "Aboreto", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.bodoni-moda-sc {
+	font-family: "Bodoni Moda SC", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
